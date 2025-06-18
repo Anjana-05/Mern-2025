@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-widtht, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-</body>
+<html>
+    <head>
+        <title>National Flag</title>
+        <style>
+            .container{
+                display: flex;
+                flex-direction: column;
+                height: 450px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .child1{
+                width: 280px;
+                height: 40px;
+                padding: 10px;
+                background-color: orangered;
+            }
+
+            .child2{
+                padding-top: 4px;
+                background-color: white;
+            }
+            .child3{
+                width: 280px;
+                height: 40px;
+                padding: 10px;
+                background-color: green;
+            }
+
+            .chakra-image{
+                width: 50px;
+                height: 60px;  
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="child1"></div>
+            <div class="child2">
+                <img class="chakra-image" src="./image/chakra.png">
+            </div>
+            <div class="child3"></div>
+        </div>
+    </body>
 </html>
