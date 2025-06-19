@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+              .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissor</h1>
+        <h3>Choose any one</h3>
+        <button onclick="getResult('rock')">Rock</button>
+        <button onclick="getResult('paper')">Paper</button>
+        <button onclick="getResult('scissor')">Scissor</button>
+
+        <h2 id="result"></h2>
+    </div>
+    <script>
+        function getResult(userChoice){
+           var choice = ['rock','paper','scissor'];
+           var computerChoice = choice[Math.floor(Math.random()*3)];//0-2
+           console.log(computerChoice);
+           var result = "";
+           if(userChoice === computerChoice)
+                result = "DRAW🤦‍♀️";
+           else if((userChoice === 'rock' && computerChoice === 'scissor') || (userChoice === 'paper' && computerChoice === 'rock') || (userChoice === 'scissor' && computerChoice === 'paper')) 
+                result = "WIN👏";
+           else
+                result = "LOSS☹️";
+
+            document.getElementById('result').innerHTML=result;
+        }
+
+        var details = async() => {
+            var response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+            var user = await response.json();
+            console.log(user);
+
+        }
+        details();
+    </script>
+</body>
+</html>
