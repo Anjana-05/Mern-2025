@@ -1,8 +1,22 @@
 import React from 'react'
 
-const Child = () => {
+/*const Child = (props) => {
   return (
-    <div>Child</div>
+    <h3>Name: {props.name}</h3>
+  )
+}*/
+
+
+
+const Child = ({name,phoneno,dept}) => {
+  return (
+    <>
+      <div>
+        <h3>Name: {name}</h3>
+        <h3>Phone: {phoneno}</h3>
+        <h3>dept: {dept}</h3>
+      </div>
+    </>
   )
 }
 
