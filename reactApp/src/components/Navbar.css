@@ -1,16 +1,18 @@
 .navbar{
     display: flex;
     background-color: black;
-    color: white;
     padding: 10px;
     justify-content: space-around;
 }
 
 .link{
     list-style: none;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
     padding: 5px 10px 5px 10px;
     border: 2px solid grey;
-    background-color: coral;
+    background-image: linear-gradient(to bottom right, #ff9966, #ff5e62);   
     border-radius: 4px;
 }
 
