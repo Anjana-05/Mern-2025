@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="change">Hello World</h1>
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="changeStyle()">Change Text</button>
+
+    <br><br>
+    <input type="text" id="name">
+    <button onclick="addName()">Add</button>
+    <ul id="list"></ul>
+    <script>
+        var changeText = () =>{
+            var input= document.getElementById("change");
+            input.innerHTML = input.innerHTML==="Hello World"?"Hello Kongu":"Hello World";
+        }
+
+        var changeStyle = () => {
+            var text = document.getElementById('change');
+            text.style.color = text.style.color=="black"? "red":"black";
+            text.style.fontSize = "50px";
+        }
+
+        var addName = () =>{
+            var name =  document.getElementById("name").value;
+            var list = document.createElement("li");
+            list.innerText = name;
+            document.getElementById("list").append(list);
+        }
+
+    </script>
+</body>
+</html>
