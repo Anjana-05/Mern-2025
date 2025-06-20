@@ -4,8 +4,8 @@ import Home from './Pages/Home'
 import Skills from './Pages/Skills'
 import Contact from './Pages/Contact'
 import Counter from './components/Counter'
-
 import './App.css'
+import Navbar from './components/Navbar'
 const App = () => {
   var day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
   var users = {username: "Anjana",password:"12345"}
@@ -14,8 +14,9 @@ const App = () => {
     {/*<Child name="Anjana" phoneno="1234567895" dept="IT"/>
     <Home days={day} users={users} />
 
-    <Contact users={users}/>*/}
-    <Counter />
+    <Contact users={users}/>
+    <Counter />*/}
+    <Navbar />
     </div>
   )
 }
