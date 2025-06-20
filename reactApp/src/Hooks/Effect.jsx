@@ -2,17 +2,15 @@ import React, { useEffect, useState } from 'react'
 
 const Effect = () => {
   const [count,setCount] = useState(0);
-  const [num,setNumber] = useState(0);
+
   useEffect(() => {
-    console.log('UseEffect Rendered')
-  },[count])
+    setTimeout(() => {setCount(count+1)
+    },2000)
+  },[count]) //auto increment after 2seconds
   
+
   const increment=() => {
     setCount(count+1);
-  }
-
-  const increment2=() => {
-    setNumber(num+1);
   }
   const decrement=() => {
     setCount(count-1);
@@ -27,11 +25,6 @@ const Effect = () => {
         <button onClick={increment}>Increment</button>
         <button onClick={reset}>Reset</button>
         <button onClick={decrement}>Decrement</button>
-    </div>
-
-    <div>
-      <h1>{num}</h1>
-      <button onClick={increment2}>Increment</button>
     </div>
     </>
   )

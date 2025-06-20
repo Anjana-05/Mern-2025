@@ -4,12 +4,14 @@ import Home from './Pages/Home'
 import Skills from './Pages/Skills'
 import Contact from './Pages/Contact'
 import Login from './Pages/Login'
+import Signup from './Pages/Signup'
 import Counter from './components/Counter'
 import './App.css'
 import Navbar from './components/Navbar'
 import Hooks from './Pages/Hooks'
 import State from './Hooks/State'
 import Effect from './Hooks/Effect'
+import Effect2 from './Hooks/Effect2'
 import { Route, Routes } from 'react-router-dom'
 const App = () => {
   var day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
@@ -29,10 +31,11 @@ const App = () => {
       <Route path='/skills' element={<Skills/>} />
       <Route path='/child' element={<Child name="Anjana" phoneno="1234567895" dept="IT"/>}/>
       <Route path='/login' element={<Login/>}/>
+      <Route path='/signup' element={<Signup/>}/>
       <Route path='/hooks' element={<Hooks/>}/>
       <Route path='/state' element={<State/>}/>
       <Route path='/effect' element={<Effect/>}/>
-
+      <Route path='/effect2' element={<Effect2/>}/>
     </Routes>
     </div>
   )

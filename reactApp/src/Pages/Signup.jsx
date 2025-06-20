@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import './Login.css'
-const Login = () => {
+import './Signup.css'
+const Signup = () => {
   const [formData, setFormData] = useState({
     email: "",
     password: ""
@@ -22,7 +22,7 @@ const Login = () => {
     <>
         <div className='formContainer'>
             <form onSubmit={handleSubmit}>
-              <h3>Login</h3>
+              <h3>Signup</h3>
                 <label>Email: </label>
                 <input id="email" type='text' name='email' value={formData.email} onChange={handleChange}></input>
                 <label>Password: </label>
@@ -37,4 +37,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Signup
