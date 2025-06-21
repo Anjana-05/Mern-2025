@@ -1,17 +1,14 @@
 import React from 'react'
+import About from './About'
+import image from '../assets/instagram-img.png'
 
 const Home = ({days,users}) => {
   return (
     <>
     <div>
-      <ol>
-        {days.map((day) => (<li>{day}</li>))}
-      </ol>
-    </div>
+      <About days={days} users={users}/>
 
-    <div>
-      <h3>{users.username}</h3>
-      <h3>{users.password}</h3>
+      <img src={image} alt="" />
     </div>
     </>
   )
