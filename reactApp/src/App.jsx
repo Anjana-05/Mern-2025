@@ -13,6 +13,7 @@ import State from './Hooks/State'
 import Effect from './Hooks/Effect'
 import Effect2 from './Hooks/Effect2'
 import Reducer from './Hooks/Reducer'
+import Todo from './components/Todo'
 import { Route, Routes } from 'react-router-dom'
 const App = () => {
   var day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
@@ -38,6 +39,7 @@ const App = () => {
       <Route path='/effect' element={<Effect/>}/>
       <Route path='/effect2' element={<Effect2/>}/>
       <Route path='/reducer' element={<Reducer/>}/>
+      <Route path='/todo' element={<Todo/>}></Route>
     </Routes>
     </div>
   )
